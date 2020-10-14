@@ -1,9 +1,6 @@
 package ru.geekbrains.shop.persistence.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import ru.geekbrains.shop.persistence.entities.enums.Role;
 import ru.geekbrains.shop.persistence.entities.utils.PersistableEntity;
@@ -14,6 +11,7 @@ import javax.persistence.Enumerated;
 
 @Data
 @Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
